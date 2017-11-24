@@ -22,7 +22,7 @@ def hi():
 @post("/")
 def pos():
     js = request.json
-    print(js)
+    #print(js)
     bot_id = '478575473:AAFdWjmJF36mXLjizKHIPA4M99uxwNrLTYE'
 
     chat_id = str(js['message']['chat']['id'])
@@ -36,7 +36,6 @@ def pos():
 
     if (message == "Hello!"):
         ans = "Hello!"
-
     requests.get('https://api.telegram.org/bot' + bot_id + '/sendMessage?chat_id=' + chat_id + '&text=' + ans)
 
     return "0"
