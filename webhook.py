@@ -7,7 +7,7 @@ import bottle
 import time
 import json
 
-__author__ = 'mishindanila'
+__author__ = 'mishingay'
 
 import os
 import requests
